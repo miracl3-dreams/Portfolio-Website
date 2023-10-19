@@ -1,0 +1,469 @@
+@keyframes identifier {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #4B125C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    background-color: #A02A63;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left {
+    margin-right: auto; 
+}
+
+.right {
+    margin-left: auto; 
+}
+
+.nav-list.left {
+    margin-left: 30px; 
+}
+
+.nav-list.right {
+    margin-right: 30px; 
+}
+
+.nav-list li {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.nav-list a:visited {
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    text-decoration: underline; 
+}
+
+main hr {
+    border: 0;
+    background: rgba(3, 3, 3, 0.7);
+    height: 6px;
+    margin: 60px 50px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+}
+
+.firstSection>div {
+    text-align: center;
+    width: 50%;
+}
+
+.leftSection {  
+    color: white;
+    width: 30%;
+    font-size: 2.0rem;
+}
+
+.leftSection .button {
+    padding: 10px 0px;
+}
+
+.leftSection .btnresume {
+    padding: 12px;
+    background: rgb(44, 51, 141);
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.leftSection .btnresume:active {
+    background: black;
+    color: white;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    flex: 1;
+    border-radius: 2%;
+    padding: 114px; 
+}
+
+#pic {
+    display: flex;
+    gap: 20px; 
+}
+
+.image-container {
+    width: 100px; 
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 110%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#element {
+    color: black;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secondSection {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.secondSection img {
+    height: auto;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.about-text h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+hr.new2 {
+    margin-top: -30px;
+}
+
+span {
+    color: white;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button {
+    background: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.thirdSection {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.thirdSection h1 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.thirdSection .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.thirdSection .box {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.thirdSection .box:hover {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.thirdSection .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.thirdSection .box-content {
+    padding: 15px;
+}
+
+.thirdSection .box h1.headings {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.thirdSection .box p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.thirdSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -27px;
+    left: -12px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 2px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(255, 255, 255) 50%, lightblue 25%);
+    background-size: 100% 200%;
+    transition: all .10s;
+}
+
+.box:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 63px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 70px;
+    color: gray;
+    width: 150px;
+    font-size: 11px;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+@media screen and (max-width: 2000px) {
+    /* Non-responsive styles here */
+
+    .firstSection {
+        flex-direction: row; /* Ensure content is displayed side by side */
+    }
+
+    .leftSection {
+        width: 30%; /* Adjust the width as needed */
+    }
+
+    .rightSection {
+        width: 70%; /* Adjust the width as needed */
+    }
+
+    .rightSection>div {
+        width: auto; /* Allow content to determine width */
+    }
+
+    /* Other non-responsive styles here */
+}
+
+/* Responsive styles here */
+
+@media screen and (max-width: 768px) {
+    .firstSection {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .leftSection,
+    .rightSection {
+        width: 100%; /* Take up the full width in responsive mode */
+    }
+
+    /* Other responsive styles here */
+}
+
+/* Add this CSS within your existing media query for responsive mode */
+/* Add this CSS within your existing media query for responsive mode */
+@media screen and (max-width: 768px) {
+    .firstSection {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .firstSection>div {
+        width: 100%; /* Make both divs take up full width */
+        text-align: center; /* Center text within the divs */
+    }
+
+    /* Center the image horizontally and vertically */
+    #pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Ensure the container takes up the full height of its parent */
+    }
+
+    /* Set the div's width and height */
+    #pic div {
+        width: 325px; /* Set the desired width */
+        height: 325px; /* Set the desired height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img {
+        max-width: 100%; /* Make the image responsive */
+        max-height: 100%; /* Ensure the image does not exceed the div's height */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul.nav-list {
+        flex-direction: row; /* Keep links in a straight line */
+        flex-wrap: wrap; /* Allow links to wrap to the next line */
+        justify-content: flex-start; /* Align links to the left */
+        margin-top: 10px;
+    }
+
+    nav ul.nav-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center; /* Center text within list items */
+        flex: 1; /* Allow items to take equal space in a row */
+    }
+
+    nav ul.nav-list li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Hide the burger menu when not in use */
+    .burger-menu {
+        display: none;
+    }
+}
+
+
